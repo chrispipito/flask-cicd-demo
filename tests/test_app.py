@@ -2,7 +2,6 @@ import unittest
 import sys
 import os
 
-# Add the src directory to the path so we can import the app
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.app import app

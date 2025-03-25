@@ -16,4 +16,15 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'Pipeline completed'
+        }
+        success {
+            echo 'Tests passed - ready for next stage'
+        }
+        failure {
+            echo 'Tests failed - needs investigation'
+        }
+    }
 }
